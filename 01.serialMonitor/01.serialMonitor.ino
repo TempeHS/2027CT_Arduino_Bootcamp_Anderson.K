@@ -28,14 +28,14 @@
     https://docs.arduino.cc/software/ide-v2/tutorials/ide-v2-serial-plotter
 */
 
-// The setup function runs once when you press reset or power the board
+
 void setup() {
-  Serial.begin(9600);
-  Serial.print("Jason!");
-
+  Serial.begin(115200);                  // Start talking to the computer at 115200 baud
+  Serial.print("Count: ");
+  Serial.println(42);   // Prints: Count: 42
 }
 
-// The loop function runs over and over again forever
 void loop() {
-
+  delay(1000); // Wait 1 second each cycle
 }
+
